@@ -126,32 +126,6 @@ Ce TP a pour but de **concevoir, déployer et valider une infrastructure VoIP fo
 
 L’ensemble de la mise en œuvre est réalisé dans un environnement virtualisé, en respectant une logique **réseau, service et utilisateur**, proche d’un contexte professionnel réel.
 
----
-
-## `📘`︲Présentation du repository
-
----
-
-Ce repository contient une **documentation technique complète et structurée**, détaillant **pas à pas** l’installation, la configuration et la validation d’un service de téléphonie IP basé sur **XiVO**.
-
-Il couvre l’intégralité du cycle de déploiement :
-- installation du serveur VoIP,
-- configuration réseau et DHCP,
-- création des utilisateurs et des lignes SIP,
-- intégration de téléphones IP et softphones,
-- mise en place de la messagerie vocale,
-- gestion de plusieurs contextes internes,
-- routage des appels inter-contextes,
-- tests fonctionnels et validation finale.
-
-La documentation est pensée pour être :
-- **pédagogique** (chaque étape est expliquée),
-- **progressive** (du socle système aux services avancés),
-- **exploitable** (captures, commandes, vérifications),
-- **professionnelle** (structure claire, lisible, maintenable).
-
----
-
 ## `🎯`︲Objectifs pédagogiques
 
 ---
