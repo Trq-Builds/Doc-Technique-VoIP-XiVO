@@ -1,11 +1,4 @@
-# Doc-Technique-VoIP-XiVO
-
-
-
-
-
-
-
+# ` 📞 `︲Doc-Technique-VoIP-XiVO
 
 ## `📑`︲Sommaire
 
@@ -101,5 +94,77 @@
 ---
 
 17. [` ✅ `︲Conclusion & validation du TP](#conclusion--validation-du-tp)
+
+---
+
+# `📞`︲Service de téléphonie IP – XiVO (VoIP)
+
+---
+
+> [!IMPORTANT]  
+> Cette documentation s’inscrit dans le cadre d’un **TP d’administration des services réseau** et a pour objectif la **mise en place complète d’une solution de téléphonie sur IP (VoIP)** basée sur **XiVO Pollux Edition**, déployée sur un serveur Debian.
+
+---
+
+## `🟦`︲Introduction
+
+---
+
+La téléphonie sur IP (VoIP) est aujourd’hui un **service essentiel** au sein des infrastructures informatiques d’entreprise.  
+Elle permet de centraliser les communications, de réduire les coûts, d’améliorer la flexibilité et de faciliter l’administration des postes téléphoniques.
+
+Ce TP a pour but de **concevoir, déployer et valider une infrastructure VoIP fonctionnelle**, reposant sur :
+- un serveur **XiVO Pollux**,
+- des **téléphones IP physiques**,
+- des **softphones**,
+- un **service DHCP dédié**,
+- et un **plan d’appels structuré par contextes**.
+
+L’ensemble de la mise en œuvre est réalisé dans un environnement virtualisé, en respectant une logique **réseau, service et utilisateur**, proche d’un contexte professionnel réel.
+
+---
+
+## `📘`︲Présentation du repository
+
+---
+
+Ce repository contient une **documentation technique complète et structurée**, détaillant **pas à pas** l’installation, la configuration et la validation d’un service de téléphonie IP basé sur **XiVO**.
+
+Il couvre l’intégralité du cycle de déploiement :
+- installation du serveur VoIP,
+- configuration réseau et DHCP,
+- création des utilisateurs et des lignes SIP,
+- intégration de téléphones IP et softphones,
+- mise en place de la messagerie vocale,
+- gestion de plusieurs contextes internes,
+- routage des appels inter-contextes,
+- tests fonctionnels et validation finale.
+
+La documentation est pensée pour être :
+- **pédagogique** (chaque étape est expliquée),
+- **progressive** (du socle système aux services avancés),
+- **exploitable** (captures, commandes, vérifications),
+- **professionnelle** (structure claire, lisible, maintenable).
+
+---
+
+## `🎯`︲Objectifs pédagogiques
+
+---
+
+À travers ce TP, les objectifs sont les suivants :
+
+- Comprendre le fonctionnement d’un **système de téléphonie IP**
+- Installer et administrer un **serveur XiVO**
+- Mettre en œuvre un **service DHCP** adapté à la VoIP
+- Gérer des **utilisateurs, lignes et contextes SIP**
+- Configurer des **téléphones IP physiques** et des **softphones**
+- Mettre en place un **plan d’appels cohérent**
+- Tester et valider le bon fonctionnement du service
+
+---
+
+> [!TIP]  
+> Cette documentation peut servir de **support d’apprentissage**, de **référence technique** ou de **base pour un déploiement VoIP en environnement réel**.
 
 ---
