@@ -1,5 +1,9 @@
 # ` 📞 `︲Doc-Technique-VoIP-XiVO
 
+Ce dépôt présente un **guide complet pour la mise en place d’un service de téléphonie IP (VoIP)** basé sur **XiVO Pollux**, déployé sur un serveur **Debian 12**.  
+Il couvre l’installation, la configuration et l’utilisation du service de bout en bout.  
+Tu y apprendras à **installer un serveur VoIP**, à **configurer des utilisateurs et des lignes SIP**, à **intégrer des téléphones IP et des softphones**, ainsi qu’à **mettre en place un plan d’appels fonctionnel** avec plusieurs contextes internes.
+
 ## `📑`︲Sommaire
 
 ---
