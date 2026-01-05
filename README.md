@@ -105,6 +105,7 @@ Tu y apprendras à **installer un serveur VoIP**, à **configurer des utilisateu
 
 ---
 
+<a id="installation-systeme"></a>
 ## `🟦`︲Introduction
 
 ---
@@ -121,6 +122,7 @@ Ce TP a pour but de **concevoir, déployer et valider une infrastructure VoIP fo
 
 L’ensemble de la mise en œuvre est réalisé dans un environnement virtualisé, en respectant une logique **réseau, service et utilisateur**, proche d’un contexte professionnel réel.
 
+<a id="installation-systeme"></a>
 ## `🎯`︲Objectifs pédagogiques
 
 ---
@@ -142,10 +144,12 @@ L’ensemble de la mise en œuvre est réalisé dans un environnement virtualis�
 
 ---
 
+<a id="installation-systeme"></a>
 ## `🧰`︲Prérequis et environnement technique
 
 ---
 
+<a id="installation-systeme"></a>
 ### `🖥️`︲Environnement matériel et logiciel
 
 La mise en œuvre du TP repose sur l’environnement suivant :
@@ -159,6 +163,7 @@ La mise en œuvre du TP repose sur l’environnement suivant :
 
 ---
 
+<a id="installation-systeme"></a>
 ### `🌐`︲Environnement réseau
 
 L’architecture réseau mise en place comprend :
@@ -173,6 +178,7 @@ L’architecture réseau mise en place comprend :
 
 ---
 
+<a id="installation-systeme"></a>
 ### `📦`︲Services et composants utilisés
 
 Les principaux composants utilisés durant ce TP sont :
@@ -191,6 +197,7 @@ Les principaux composants utilisés durant ce TP sont :
 
 ---
 
+<a id="installation-systeme"></a>
 ## `⚙️`︲Installation du serveur VoIP XiVO Pollux
 
 ---
@@ -201,6 +208,7 @@ L’objectif est d’obtenir un **serveur fonctionnel, accessible sur le réseau
 
 ---
 
+<a id="installation-systeme"></a>
 ### `🐧`︲Installation de Debian 12 (CLI)
 
 ---
@@ -222,6 +230,7 @@ Lors de l’installation :
 
 ---
 
+<a id="installation-systeme"></a>
 ### `🌐`︲Configuration réseau initiale
 
 ---
@@ -241,6 +250,7 @@ Les points à vérifier :
 
 ---
 
+<a id="installation-systeme"></a>
 ### `📦`︲Installation de XiVO Pollux Edition
 
 ---
@@ -262,6 +272,7 @@ Les étapes principales sont :
 
 ---
 
+<a id="installation-systeme"></a>
 ### `🔐`︲Configuration initiale via l’interface web
 
 ---
@@ -283,6 +294,7 @@ Les premières vérifications à effectuer :
 
 ---
 
+<a id="installation-systeme"></a>
 ## `🏗️`︲Configuration des entités et contextes
 
 ---
@@ -294,6 +306,7 @@ Cette logique est essentielle pour simuler un **environnement d’entreprise ré
 
 ---
 
+<a id="installation-systeme"></a>
 ### `🧩`︲Création du contexte interne principal
 
 ---
@@ -311,6 +324,7 @@ Lors de la création du contexte :
 
 ---
 
+<a id="installation-systeme"></a>
 ### `🧾`︲Définition des plages de numéros
 
 ---
@@ -327,6 +341,7 @@ Dans le cadre de ce TP :
 
 ---
 
+<a id="installation-systeme"></a>
 ## `👥`︲Gestion des utilisateurs VoIP
 
 ---
@@ -339,6 +354,7 @@ Chaque utilisateur correspond à une personne disposant :
 
 ---
 
+<a id="installation-systeme"></a>
 ### `🧑‍💼`︲Création des utilisateurs du service Comptabilité
 
 ---
@@ -356,6 +372,7 @@ Pour chaque utilisateur :
 
 ---
 
+<a id="installation-systeme"></a>
 ### `📞`︲Association lignes et numéros SIP
 
 ---
