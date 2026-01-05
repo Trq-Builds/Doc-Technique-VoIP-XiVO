@@ -389,5 +389,69 @@ Cette étape garantit que les téléphones et softphones pourront se connecter c
 
 ---
 
+## `📡`︲Mise en place du service DHCP
+
+---
+
+Afin de faciliter l’intégration des équipements VoIP au réseau, un **service DHCP** est mis en place sur le serveur XiVO.  
+Il permet l’attribution automatique des paramètres réseau (adresse IP, passerelle, DNS) aux téléphones IP et aux softphones.
+
+Cette approche simplifie le déploiement et garantit une configuration homogène des équipements.
+
+---
+
+### `⚙️`︲Installation du serveur kea-dhcp4
+
+---
+
+Le service DHCP utilisé dans ce TP repose sur **kea-dhcp4**, un serveur DHCP moderne et maintenu.
+
+Les actions réalisées sont les suivantes :
+- installation du service DHCP,
+- activation du service au démarrage,
+- préparation du fichier de configuration.
+
+> [!NOTE]  
+> Le serveur DHCP doit être actif avant la connexion des téléphones IP afin de garantir une attribution correcte des paramètres réseau.
+
+---
+
+### `🌐`︲Configuration de l’étendue DHCP
+
+---
+
+Une étendue DHCP est définie afin de spécifier :
+- la plage d’adresses IP attribuables,
+- la passerelle par défaut,
+- les serveurs DNS,
+- la durée des baux.
+
+La configuration est adaptée au réseau local utilisé pour le TP.
+
+> [!IMPORTANT]  
+> La plage DHCP ne doit pas inclure l’adresse IP du serveur XiVO afin d’éviter tout conflit réseau.
+
+---
+
+### `🔄`︲Attribution automatique des paramètres réseau
+
+---
+
+Une fois le service DHCP configuré et démarré, les équipements VoIP peuvent obtenir automatiquement :
+- une adresse IP valide,
+- les paramètres réseau nécessaires à la communication,
+- l’accès au serveur XiVO.
+
+Cette étape est validée par :
+- la réception d’une adresse IP sur les téléphones,
+- la connectivité réseau fonctionnelle,
+- l’absence d’erreurs DHCP.
+
+> [!TIP]  
+> L’utilisation du DHCP accélère considérablement le déploiement des téléphones IP, notamment en environnement multi-postes.
+
+---
+
+
 
 
