@@ -283,4 +283,94 @@ Les premières vérifications à effectuer :
 
 ---
 
+## `🏗️`︲Configuration des entités et contextes
+
+---
+
+Cette étape consiste à structurer l’infrastructure VoIP en définissant les **contextes d’appels** et les **plages de numéros**.  
+Les contextes permettent d’organiser les utilisateurs et de contrôler les communications possibles entre les différents services.
+
+Cette logique est essentielle pour simuler un **environnement d’entreprise réel**, avec une séparation claire des services.
+
+---
+
+### `🧩`︲Création du contexte interne principal
+
+---
+
+Le premier contexte créé correspond au **contexte interne principal** de l’entreprise.  
+Il permet les appels internes entre les utilisateurs appartenant au même service.
+
+Lors de la création du contexte :
+- définir un nom explicite (ex. : `interne`),
+- associer le contexte aux appels internes,
+- autoriser les communications locales entre utilisateurs.
+
+> [!NOTE]  
+> Un contexte bien défini permet d’éviter les erreurs de routage et facilite l’évolution future de l’infrastructure VoIP.
+
+---
+
+### `🧾`︲Définition des plages de numéros
+
+---
+
+Une plage de numéros est associée au contexte afin d’attribuer des **extensions téléphoniques cohérentes** aux utilisateurs.
+
+Dans le cadre de ce TP :
+- chaque utilisateur se voit attribuer un numéro interne,
+- les numéros sont regroupés par service,
+- la numérotation reste simple et lisible.
+
+> [!TIP]  
+> Une numérotation claire facilite la maintenance, le dépannage et l’ajout de nouveaux utilisateurs.
+
+---
+
+## `👥`︲Gestion des utilisateurs VoIP
+
+---
+
+Cette section traite de la **création et de la gestion des utilisateurs VoIP** au sein de XiVO.  
+Chaque utilisateur correspond à une personne disposant :
+- d’un compte,
+- d’une ligne SIP,
+- et d’un numéro interne.
+
+---
+
+### `🧑‍💼`︲Création des utilisateurs du service Comptabilité
+
+---
+
+Les utilisateurs du service **Comptabilité** sont créés en premier afin de valider le fonctionnement de base du service VoIP.
+
+Pour chaque utilisateur :
+- création du compte utilisateur,
+- attribution d’un numéro interne,
+- association à une ligne SIP,
+- rattachement au contexte interne principal.
+
+> [!IMPORTANT]  
+> Chaque utilisateur doit disposer d’une ligne SIP unique pour éviter tout conflit d’enregistrement.
+
+---
+
+### `📞`︲Association lignes et numéros SIP
+
+---
+
+Une fois les utilisateurs créés, il est nécessaire de vérifier :
+- l’association correcte entre utilisateur et ligne SIP,
+- l’attribution du numéro interne,
+- l’état de l’enregistrement SIP.
+
+Cette étape garantit que les téléphones et softphones pourront se connecter correctement au serveur XiVO.
+
+> [!TIP]  
+> Un statut SIP actif confirme que la ligne est prête à être utilisée pour les appels.
+
+---
+
+
 
