@@ -389,6 +389,7 @@ Cette étape garantit que les téléphones et softphones pourront se connecter c
 
 ---
 
+
 ## `📡`︲Mise en place du service DHCP
 
 ---
@@ -399,6 +400,7 @@ Il permet l’attribution automatique des paramètres réseau (adresse IP, passe
 Cette approche simplifie le déploiement et garantit une configuration homogène des équipements.
 
 ---
+
 
 ### `⚙️`︲Installation du serveur kea-dhcp4
 
@@ -416,6 +418,7 @@ Les actions réalisées sont les suivantes :
 
 ---
 
+
 ### `🌐`︲Configuration de l’étendue DHCP
 
 ---
@@ -432,6 +435,7 @@ La configuration est adaptée au réseau local utilisé pour le TP.
 > La plage DHCP ne doit pas inclure l’adresse IP du serveur XiVO afin d’éviter tout conflit réseau.
 
 ---
+
 
 ### `🔄`︲Attribution automatique des paramètres réseau
 
