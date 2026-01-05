@@ -150,3 +150,72 @@ L’ensemble de la mise en œuvre est réalisé dans un environnement virtualis�
 > Cette documentation peut servir de **support d’apprentissage**, de **référence technique** ou de **base pour un déploiement VoIP en environnement réel**.
 
 ---
+
+## `🎯`︲Contexte et objectifs du TP
+
+---
+
+Ce TP s’inscrit dans le cadre de l’apprentissage de l’**administration des services réseau**, avec pour objectif la **mise en place d’un système de téléphonie IP fonctionnel** au sein d’un réseau local.
+
+L’infrastructure déployée repose sur un serveur **XiVO Pollux**, jouant le rôle de **PBX (Private Branch Exchange)**, permettant la gestion centralisée des appels internes entre utilisateurs.
+
+Le scénario proposé simule un **environnement d’entreprise**, incluant :
+- plusieurs utilisateurs répartis par service,
+- des téléphones IP physiques,
+- des softphones,
+- un service DHCP dédié,
+- et un plan d’appels structuré par contextes.
+
+L’objectif final est de **concevoir, configurer et valider une solution VoIP opérationnelle**, conforme aux attentes d’un environnement professionnel.
+
+---
+
+## `🧰`︲Prérequis et environnement technique
+
+---
+
+### `🖥️`︲Environnement matériel et logiciel
+
+La mise en œuvre du TP repose sur l’environnement suivant :
+
+- Un **poste hôte** capable de faire fonctionner un environnement virtualisé
+- Un **hyperviseur** (VMware Workstation / VirtualBox)
+- Une **machine virtuelle Debian 12 (CLI)** dédiée au serveur XiVO
+- Un ou plusieurs **postes clients** (PC / smartphone)
+- Un **téléphone IP Snom D715**
+- Un **point d’accès Wi-Fi TP-Link**
+
+---
+
+### `🌐`︲Environnement réseau
+
+L’architecture réseau mise en place comprend :
+
+- Un réseau local isolé (NAT ou Host-Only selon l’hyperviseur)
+- Un **serveur DHCP** permettant l’attribution automatique des paramètres réseau
+- Des équipements VoIP connectés au même segment réseau
+- Une communication SIP interne entre les différents utilisateurs
+
+> [!NOTE]  
+> L’ensemble des équipements (serveur, téléphones IP, softphones) doit impérativement se trouver sur le **même réseau logique** afin de garantir le bon fonctionnement du service VoIP.
+
+---
+
+### `📦`︲Services et composants utilisés
+
+Les principaux composants utilisés durant ce TP sont :
+
+- **XiVO Pollux Edition** (serveur VoIP)
+- **Asterisk** (moteur de téléphonie)
+- **kea-dhcp4** (service DHCP)
+- **SIP** (protocole de signalisation)
+- **Téléphones IP Snom**
+- **Softphones ZoIPer** (PC et mobile)
+
+---
+
+> [!TIP]  
+> Cette section pose les bases techniques nécessaires avant d’aborder l’installation et la configuration détaillée du serveur XiVO.
+
+---
+
