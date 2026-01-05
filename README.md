@@ -122,7 +122,7 @@ Ce TP a pour but de **concevoir, déployer et valider une infrastructure VoIP fo
 
 L’ensemble de la mise en œuvre est réalisé dans un environnement virtualisé, en respectant une logique **réseau, service et utilisateur**, proche d’un contexte professionnel réel.
 
-<a id="installation-systeme"></a>
+<a id="contexte--objectifs-du-tp"></a>
 ## `🎯`︲Objectifs pédagogiques
 
 ---
@@ -144,7 +144,7 @@ L’ensemble de la mise en œuvre est réalisé dans un environnement virtualis�
 
 ---
 
-<a id="installation-systeme"></a>
+<a id="prérequis--environnement-technique"></a>
 ## `🧰`︲Prérequis et environnement technique
 
 ---
