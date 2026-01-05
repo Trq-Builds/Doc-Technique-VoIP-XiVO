@@ -142,25 +142,6 @@ L’ensemble de la mise en œuvre est réalisé dans un environnement virtualis�
 
 ---
 
-## `🎯`︲Contexte et objectifs du TP
-
----
-
-Ce TP s’inscrit dans le cadre de l’apprentissage de l’**administration des services réseau**, avec pour objectif la **mise en place d’un système de téléphonie IP fonctionnel** au sein d’un réseau local.
-
-L’infrastructure déployée repose sur un serveur **XiVO Pollux**, jouant le rôle de **PBX (Private Branch Exchange)**, permettant la gestion centralisée des appels internes entre utilisateurs.
-
-Le scénario proposé simule un **environnement d’entreprise**, incluant :
-- plusieurs utilisateurs répartis par service,
-- des téléphones IP physiques,
-- des softphones,
-- un service DHCP dédié,
-- et un plan d’appels structuré par contextes.
-
-L’objectif final est de **concevoir, configurer et valider une solution VoIP opérationnelle**, conforme aux attentes d’un environnement professionnel.
-
----
-
 ## `🧰`︲Prérequis et environnement technique
 
 ---
@@ -209,4 +190,97 @@ Les principaux composants utilisés durant ce TP sont :
 > Cette section pose les bases techniques nécessaires avant d’aborder l’installation et la configuration détaillée du serveur XiVO.
 
 ---
+
+## `⚙️`︲Installation du serveur VoIP XiVO Pollux
+
+---
+
+Cette section décrit les étapes nécessaires à l’installation du **serveur VoIP XiVO Pollux**, depuis la mise en place du système Debian jusqu’à l’accès à l’interface d’administration web.
+
+L’objectif est d’obtenir un **serveur fonctionnel, accessible sur le réseau**, prêt à accueillir les configurations VoIP (utilisateurs, lignes, contextes).
+
+---
+
+### `🐧`︲Installation de Debian 12 (CLI)
+
+---
+
+Le serveur XiVO repose sur une **installation minimale de Debian 12**, sans interface graphique, afin de garantir :
+- de meilleures performances,
+- une surface d’attaque réduite,
+- une administration orientée serveur.
+
+Lors de l’installation :
+- sélectionner la langue et le clavier adaptés,
+- configurer le réseau (DHCP ou IP statique selon le TP),
+- définir un nom de machine explicite,
+- créer le compte administrateur et l’utilisateur standard,
+- installer uniquement les **utilitaires standards du système**.
+
+> [!NOTE]  
+> Aucune interface graphique n’est requise pour XiVO. Toute l’administration se fait via une interface web.
+
+---
+
+### `🌐`︲Configuration réseau initiale
+
+---
+
+Une fois Debian installé, une vérification de la configuration réseau est nécessaire afin de s’assurer que le serveur :
+- dispose d’une adresse IP valide,
+- peut communiquer avec les équipements VoIP,
+- est accessible depuis le poste client.
+
+Les points à vérifier :
+- adresse IP attribuée,
+- passerelle par défaut,
+- résolution DNS fonctionnelle.
+
+> [!TIP]  
+> Une **adresse IP fixe** est fortement recommandée pour un serveur VoIP afin d’éviter toute perte de connectivité avec les téléphones.
+
+---
+
+### `📦`︲Installation de XiVO Pollux Edition
+
+---
+
+XiVO Pollux est installé à l’aide du script officiel fourni par l’éditeur.  
+Cette étape permet de déployer automatiquement :
+- le moteur de téléphonie (Asterisk),
+- les services web,
+- les composants nécessaires à la gestion des téléphones et des utilisateurs.
+
+Les étapes principales sont :
+- mise à jour du système,
+- récupération du script d’installation,
+- lancement de l’installation automatique,
+- attente de la fin du déploiement des services.
+
+> [!IMPORTANT]  
+> L’installation peut prendre plusieurs minutes. Il est essentiel de **ne pas interrompre le processus**.
+
+---
+
+### `🔐`︲Configuration initiale via l’interface web
+
+---
+
+Une fois l’installation terminée, l’administration de XiVO s’effectue via une **interface web** accessible depuis un navigateur.
+
+Cette interface permet :
+- de finaliser la configuration du serveur,
+- de vérifier l’état des services,
+- d’accéder aux menus de gestion des utilisateurs et des lignes.
+
+Les premières vérifications à effectuer :
+- accessibilité de l’interface web,
+- état des services XiVO,
+- connexion avec le compte administrateur.
+
+> [!TIP]  
+> Cette étape marque la fin de l’installation du serveur. La suite du TP se concentre sur la **configuration logique du service VoIP**.
+
+---
+
 
