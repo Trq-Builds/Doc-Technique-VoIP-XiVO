@@ -105,15 +105,6 @@ Tu y apprendras à **installer un serveur VoIP**, à **configurer des utilisateu
 
 ---
 
-# `📞`︲Service de téléphonie IP – XiVO (VoIP)
-
----
-
-> [!IMPORTANT]  
-> Cette documentation s’inscrit dans le cadre d’un **TP d’administration des services réseau** et a pour objectif la **mise en place complète d’une solution de téléphonie sur IP (VoIP)** basée sur **XiVO Pollux Edition**, déployée sur un serveur Debian.
-
----
-
 ## `🟦`︲Introduction
 
 ---
