@@ -154,12 +154,12 @@ L’ensemble de la mise en œuvre est réalisé dans un environnement virtualis�
 
 La mise en œuvre du TP repose sur l’environnement suivant :
 
-- Un **poste hôte** capable de faire fonctionner un environnement virtualisé
-- Un **hyperviseur** (VMware Workstation / VirtualBox)
-- Une **machine virtuelle Debian 12 (CLI)** dédiée au serveur XiVO
-- Un ou plusieurs **postes clients** (PC / smartphone)
-- Un **téléphone IP Snom D715**
-- Un **point d’accès Wi-Fi TP-Link**
+`🧰`︲ - Un **poste hôte** capable de faire fonctionner un environnement virtualisé
+`🧰`︲ - Un **hyperviseur** (VMware Workstation / VirtualBox)
+`🧰`︲ - Une **machine virtuelle Debian 12 (CLI)** dédiée au serveur XiVO
+`🧰`︲ - Un ou plusieurs **postes clients** (PC / smartphone)
+`🧰`︲ - Un **téléphone IP Snom D715**
+`🧰`︲ - Un **point d’accès Wi-Fi TP-Link**
 
 ---
 
