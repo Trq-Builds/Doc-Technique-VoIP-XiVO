@@ -157,9 +157,28 @@ La mise en œuvre du TP repose sur l’environnement suivant :
 `🧰`︲ - Un **poste hôte** capable de faire fonctionner un environnement virtualisé
 `🧰`︲ - Un **hyperviseur** (VMware Workstation / VirtualBox)
 `🧰`︲ - Une **machine virtuelle Debian 12 (CLI)** dédiée au serveur XiVO
-`🧰`︲ - Un ou plusieurs **postes clients** (PC / smartphone)
-`🧰`︲ - Un **téléphone IP Snom D715**
-`🧰`︲ - Un **point d’accès Wi-Fi TP-Link**
+`🧰`︲ 
+
+
+> [!IMPORTANT]
+> **Présentation des outils et prérequis :**
+> - ` 🐧 `︲**Serveur :** Debian 12 **sans interface graphique** ︲[`🌐`](https://www.debian.org/)
+> 
+> - ` 🧰 `︲**Outils :** FOG (Free Open-Source Ghost) `V.1.5.10.1721` ︲[`🌐`](https://fogproject.org/)
+> 
+> - ` 📦 `︲**VMWare :** ︲[`🌐`](https://www.vmware.com/)
+> 
+> - ` ⚡ `︲**PuTTY :** ︲[`🌐`](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+> 
+> - ` ⚡ `︲Un **point d’accès Wi-Fi TP-Link**
+> 
+> - Un ou plusieurs **postes clients** (PC / smartphone)
+> 
+> - ` 👤 `︲**Interface Chaise-Clavier fonctionnelle.** 🫵
+> 
+> - ` ☕ `︲**Un peu de patience !**
+
+---
 
 ---
 
